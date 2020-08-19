@@ -1,7 +1,8 @@
-package com.leo.meettheteam
+package com.leo.meettheteam.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.leo.meettheteam.R
 
 class MainActivity : AppCompatActivity() {
 
