@@ -1,10 +1,9 @@
 package com.leo.meettheteam.utils
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.view.View
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
+import androidx.databinding.ObservableBoolean
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.bumptech.glide.Glide
@@ -39,5 +38,15 @@ object BindingAdapters {
     @BindingAdapter("app:clickListener")
     fun setClicklistener(view: View, clickListener: View.OnClickListener) {
         view.setOnClickListener(clickListener)
+    }
+
+    @JvmStatic
+    @BindingAdapter("app:isVisible")
+    fun setVisibility(view: View, shouldShow: ObservableBoolean) {
+        if (shouldShow.get()) {
+            view.visibility = View.VISIBLE
+        } else {
+            view.visibility = View.GONE
+        }
     }
 }
