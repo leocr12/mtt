@@ -101,10 +101,13 @@
 
                 <TextView
                     android:id="@+id/personality_description"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/space_0"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/personality_title"
+                    app:layout_constraintEnd_toStartOf="@id/personality_chevron"
+                    android:layout_marginStart="@dimen/space_2"
+                    android:layout_marginEnd="@dimen/space_2"
                     android:text="@{user.personality}"
                     app:isVisible="@{showPersonality}"/>
 
@@ -149,10 +152,13 @@
 
                 <TextView
                     android:id="@+id/interest_description"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/space_0"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/interest_title"
+                    app:layout_constraintEnd_toStartOf="@id/interest_chevron"
+                    android:layout_marginStart="@dimen/space_2"
+                    android:layout_marginEnd="@dimen/space_2"
                     android:text="@{user.interests}"
                     app:isVisible="@{showInterest}"/>
 
@@ -197,10 +203,13 @@
 
                 <TextView
                     android:id="@+id/dating_description"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/space_0"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/dating_title"
+                    app:layout_constraintEnd_toStartOf="@id/dating_chevron"
+                    android:layout_marginStart="@dimen/space_2"
+                    android:layout_marginEnd="@dimen/space_2"
                     android:text="@{user.datingPreferences}"
                     app:isVisible="@{showDating}"/>
 
