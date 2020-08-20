@@ -37,7 +37,7 @@
 
             <ImageView
                 android:id="@+id/user_image"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/space_0"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -46,8 +46,9 @@
                 android:contentDescription="@string/profile_image_description"/>
 
             <TextView
+                style="@style/MediumBold"
                 android:id="@+id/user_name"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/space_0"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/user_image"
@@ -56,13 +57,11 @@
                 android:layout_marginEnd="@dimen/space_4"
                 android:layout_marginTop="@dimen/space_6"
                 android:text="@{name}"
-                android:textStyle="bold"
-                android:textSize="16sp"
                 tools:text="John Doe"/>
 
             <TextView
                 android:id="@+id/user_role"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/space_0"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/user_name"

@@ -7,4 +7,9 @@
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+    <string name="detail_title">Team Detail</string>
+    <string name="personality_title">Personality</string>
+    <string name="chevron">Chevron</string>
+    <string name="interest_title">Interests</string>
+    <string name="dating_title">Dating Preferences</string>
 </resources>
