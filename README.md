@@ -5,3 +5,4 @@ Sample reading a local JSON file to display a list of data using DataBinding on 
 3rd party libraries:
 - [Gson](https://github.com/google/gson)
 - [Glide](https://github.com/bumptech/glide)
+- [CircleImageView](https://github.com/hdodenhof/CircleImageView)
